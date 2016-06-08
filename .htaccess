@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+Options All -Indexes
+
+RewriteCond %{HTTP_USER_AGENT} ^FlashGet.* [OR]
+RewriteCond %{HTTP_USER_AGENT} ^GetRight.* [OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*HTTrack.*$ [OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*MemoWeb.*$ [OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*FileHound.*$
+RewriteRule /* http://www.jangancobacopywebsiteguadosalugakridhogua.com/ [R,L]
